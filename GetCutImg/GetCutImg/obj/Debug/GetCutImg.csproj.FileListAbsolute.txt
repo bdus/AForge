@@ -13,3 +13,15 @@ c:\users\bdus\documents\visual studio 2015\Projects\GetCutImg\GetCutImg\bin\Debu
 c:\users\bdus\documents\visual studio 2015\Projects\GetCutImg\GetCutImg\bin\Debug\AForge.Imaging.xml
 c:\users\bdus\documents\visual studio 2015\Projects\GetCutImg\GetCutImg\bin\Debug\AForge.xml
 c:\users\bdus\documents\visual studio 2015\Projects\GetCutImg\GetCutImg\bin\Debug\AForge.Math.xml
+C:\Users\bdus\Documents\Visual Studio 2015\Projects\AForge\AForge\GetCutImg\GetCutImg\bin\Debug\GetCutImg.exe.config
+C:\Users\bdus\Documents\Visual Studio 2015\Projects\AForge\AForge\GetCutImg\GetCutImg\obj\Debug\GetCutImg.exe
+C:\Users\bdus\Documents\Visual Studio 2015\Projects\AForge\AForge\GetCutImg\GetCutImg\obj\Debug\GetCutImg.pdb
+C:\Users\bdus\Documents\Visual Studio 2015\Projects\AForge\AForge\GetCutImg\GetCutImg\bin\Debug\GetCutImg.exe
+C:\Users\bdus\Documents\Visual Studio 2015\Projects\AForge\AForge\GetCutImg\GetCutImg\bin\Debug\GetCutImg.pdb
+C:\Users\bdus\Documents\Visual Studio 2015\Projects\AForge\AForge\GetCutImg\GetCutImg\bin\Debug\AForge.xml
+C:\Users\bdus\Documents\Visual Studio 2015\Projects\AForge\AForge\GetCutImg\GetCutImg\bin\Debug\AForge.Imaging.xml
+C:\Users\bdus\Documents\Visual Studio 2015\Projects\AForge\AForge\GetCutImg\GetCutImg\bin\Debug\AForge.Math.xml
+C:\Users\bdus\Documents\Visual Studio 2015\Projects\AForge\AForge\GetCutImg\GetCutImg\obj\Debug\GetCutImg.csprojResolveAssemblyReference.cache
+C:\Users\bdus\Documents\Visual Studio 2015\Projects\AForge\AForge\GetCutImg\GetCutImg\obj\Debug\GetCutImg.Form1.resources
+C:\Users\bdus\Documents\Visual Studio 2015\Projects\AForge\AForge\GetCutImg\GetCutImg\obj\Debug\GetCutImg.Properties.Resources.resources
+C:\Users\bdus\Documents\Visual Studio 2015\Projects\AForge\AForge\GetCutImg\GetCutImg\obj\Debug\GetCutImg.csproj.GenerateResource.Cache

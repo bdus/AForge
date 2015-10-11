@@ -91,7 +91,8 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox2.Image = global::AForgeImaging.Properties.Resources._0;
+            //this.pictureBox2.Image = global::AForgeImaging.Properties.Resources._0;
+            //this.pictureBox2.Image = global::AForgeImaging.Properties.Resources.xxl;
             this.pictureBox2.Location = new System.Drawing.Point(149, 201);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(136, 43);

@@ -23,29 +23,45 @@ namespace GetCutImg
         {
             InitializeComponent();
         }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             button1_Click(sender, e);
             button2_Click(sender, e);
-            pictureBox1.Image = DrowRedline(pictureBox1.Image);
-
+            //pictureBox1.Image = DrowRedline(pictureBox1.Image);
+            button3_Click(sender, e);
         }
 
-
+        public Bitmap[] bs;
         private void button3_Click(object sender, EventArgs e)
         {
-            Bitmap b = new Bitmap(pictureBox1.Image);
+            //Bitmap b = new Bitmap(pictureBox1.Image);
+            pictureBox3.Image = pictureBox2.Image;
+            bs = CutImg(pictureBox3.Image);
 
-            //Bitmap[] bs = 
-            pictureBox1.Image = 
-                CutImg(b);
+            /*for (int i = 0; i < bs.Length; i++)
+            {
+                imageList1.Images.Add(i.ToString(), bs[i]);
+            }*/
+           
+
+            pictureBox4.Image = bs[Selectedbmp];
 
         }
-
-
-        public Bitmap  CutImg(System.Drawing.Image b)
+        private int Selectedbmp = 0;
+        private void button4_Click(object sender, EventArgs e)
         {
+            Selectedbmp++;
+            if(Selectedbmp >= bs.Length)
+            {
+                Selectedbmp = 0;
+            }
+            //MessageBox.Show("val:"+ Selectedbmp);
+            pictureBox4.Image = bs[Selectedbmp];
+        }
 
+        public Bitmap[] CutImg(System.Drawing.Image b)
+        {
 
             try
             {
@@ -95,19 +111,21 @@ namespace GetCutImg
 
                 int[] locas_a = cutloca.ToArray();
                 Rectangle[] rects = new Rectangle[locas_a.Length - 1];
-
+                Bitmap[] ans = new Bitmap[locas_a.Length - 1];
                 for (int i = 0; i < locas_a.Length - 1; i++)
                 {
                     rects[i] = new Rectangle(locas_a[i], 0, locas_a[i+1] - locas_a[i], Y - 1);
                     g.DrawRectangle(mypen, rects[i]);
+                    ans[i] = bt.Clone(rects[i], PixelFormat.Format32bppArgb);
                 }
 
                 //Rectangle rect = new Rectangle(locas_a[0], 0, locas_a[1] - locas_a[0], Y-1);
 
-                pictureBox2.Image = bt.Clone(rects[0], PixelFormat.Format32bppArgb);
+                //pictureBox2.Image = bt.Clone(rects[0], PixelFormat.Format32bppArgb);
+                pictureBox3.Image = bt;
 
-
-                return bt;
+                
+                return ans;
 
             }
             catch (Exception)
@@ -125,11 +143,12 @@ namespace GetCutImg
         {
             string ImgUrl = "http://www.f02.cn/image.jsp?time=1443711845988";
             pictureBox1.Image = LoadImg(ImgUrl);
+
         }
         private void button2_Click(object sender, EventArgs e)
         {
-
-            pictureBox1.Image = DealImg(pictureBox1.Image);
+            pictureBox2.Image = pictureBox1.Image;
+            pictureBox2.Image = DealImg(pictureBox2.Image);
             
             //can not convert a System.Drawing.Image to System.Drawing.Bitmap
         }
@@ -294,5 +313,6 @@ namespace GetCutImg
 
         #endregion
 
+        
     }
 }

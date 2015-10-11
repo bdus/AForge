@@ -133,7 +133,8 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::AForgeImaging.Properties.Resources.xxl1;
+            //this.pictureBox1.Image = global::AForgeImaging.Properties.Resources.xxl1;
+            //this.pictureBox1.Image = global::AForgeImaging.Properties.Resources.xxl1;
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(430, 429);
