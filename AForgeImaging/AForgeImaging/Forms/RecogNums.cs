@@ -20,7 +20,9 @@ namespace AForgeImaging.Forms
 
         private void RecogNums_Load(object sender, EventArgs e)
         {
-            pictureBox1.Image = global::AForgeImaging.Properties.Resources._0;
+            System.Resources.ResourceManager rm = new System.Resources.ResourceManager();
+
+            pictureBox1.Image = global::AForgeImagin
             pictureBox2.Image = global::AForgeImaging.Properties.Resources._0;
             
         }
